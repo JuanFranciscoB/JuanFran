@@ -1,0 +1,53 @@
+import random 
+print("Welcome to rock, paper, scissors.")
+user_choice = int(input("Type 0 for rock, 1 for paper, 2 scissors "))
+rock = 0
+paper = 1 
+scissors = 2 
+moves = [rock, paper, scissors]
+computer_choice = moves[random.randint(0, 2)]
+if user_choice == rock:
+  print('''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+''')
+elif computer_choice == rock:
+  print('''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+''')
+  if user_choice == paper:
+    print(f"Computer chose paper. you lose.")
+  if user_choice == scissors:
+    print(f"Computer chose scissors. you win!")
+if user_choice == paper:
+  print('''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+''')
+if computer_choice == paper:
+  print('''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+''')
+
+  if user_choice == scissors:
+    print(f"Computer chose {computer_choice}. you win.")
+  if user_choice == rock:
+    print(f"Computer chose {computer_choice}. you lose!")
