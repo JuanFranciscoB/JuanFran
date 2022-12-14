@@ -1,0 +1,12 @@
+tip = input("What percentage would you like to tip? 10, 12 or 15 ")
+billsplit = input("How many people to split the bill? ")
+billfloated = float(bill)
+tipfloated = float(tip)
+billsplitint = int(billsplit)
+tipdecimaled = tipfloated / 100
+completetip = billfloated * tipdecimaled
+totalbill = completetip + billfloated
+billsplittotaleach = round(totalbill / billsplitint, 2)
+print(f"your total bill is {totalbill}.")
+print(f"to split the bill equally you will each need to pay {billsplittotaleach}.")
+print(f"The tip will be {completetip}")
